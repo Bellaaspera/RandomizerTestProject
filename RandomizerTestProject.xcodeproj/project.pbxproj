@@ -14,6 +14,7 @@
 		703B8B1E29C5092B00924745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703B8B1D29C5092B00924745 /* Assets.xcassets */; };
 		703B8B2129C5092B00924745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703B8B1F29C5092B00924745 /* LaunchScreen.storyboard */; };
 		703B8B2929C50C6F00924745 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B8B2829C50C6F00924745 /* SettingsViewController.swift */; };
+		703B8B8829CF49D400924745 /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B8B8729CF49D400924745 /* RandomNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		703B8B2029C5092B00924745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		703B8B2229C5092B00924745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703B8B2829C50C6F00924745 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		703B8B8729CF49D400924745 /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,57 @@
 		703B8B1329C5092A00924745 /* RandomizerTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				703B8B1429C5092A00924745 /* AppDelegate.swift */,
-				703B8B1629C5092A00924745 /* SceneDelegate.swift */,
-				703B8B1829C5092A00924745 /* MainViewController.swift */,
-				703B8B2829C50C6F00924745 /* SettingsViewController.swift */,
-				703B8B1A29C5092A00924745 /* Main.storyboard */,
-				703B8B1D29C5092B00924745 /* Assets.xcassets */,
-				703B8B1F29C5092B00924745 /* LaunchScreen.storyboard */,
-				703B8B2229C5092B00924745 /* Info.plist */,
+				703B8B8629CF49BB00924745 /* Models */,
+				703B8B8229CF490500924745 /* App */,
+				703B8B8329CF491700924745 /* ViewControllers */,
+				703B8B8529CF499D00924745 /* Storyboards */,
+				703B8B8429CF492800924745 /* Resourses */,
 			);
 			path = RandomizerTestProject;
+			sourceTree = "<group>";
+		};
+		703B8B8229CF490500924745 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				703B8B1429C5092A00924745 /* AppDelegate.swift */,
+				703B8B1629C5092A00924745 /* SceneDelegate.swift */,
+				703B8B2229C5092B00924745 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		703B8B8329CF491700924745 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				703B8B1829C5092A00924745 /* MainViewController.swift */,
+				703B8B2829C50C6F00924745 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		703B8B8429CF492800924745 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				703B8B1D29C5092B00924745 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		703B8B8529CF499D00924745 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				703B8B1A29C5092A00924745 /* Main.storyboard */,
+				703B8B1F29C5092B00924745 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		703B8B8629CF49BB00924745 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				703B8B8729CF49D400924745 /* RandomNumber.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +186,7 @@
 			files = (
 				703B8B1929C5092A00924745 /* MainViewController.swift in Sources */,
 				703B8B1529C5092A00924745 /* AppDelegate.swift in Sources */,
+				703B8B8829CF49D400924745 /* RandomNumber.swift in Sources */,
 				703B8B1729C5092A00924745 /* SceneDelegate.swift in Sources */,
 				703B8B2929C50C6F00924745 /* SettingsViewController.swift in Sources */,
 			);
@@ -293,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VLWS5J8QR3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomizerTestProject/Info.plist;
+				INFOPLIST_FILE = RandomizerTestProject/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VLWS5J8QR3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomizerTestProject/Info.plist;
+				INFOPLIST_FILE = RandomizerTestProject/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
